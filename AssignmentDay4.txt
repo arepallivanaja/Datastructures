@@ -1,0 +1,5 @@
+Question 1
+In the Binary Search algorithm, it is suggested to calculate the mid as
+beg + (end - beg) / 2 instead of (beg + end) / 2. Why is it so?
+Question 2
+Write the algorithm/function for Ternary Search.
