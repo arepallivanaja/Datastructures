@@ -1,0 +1,11 @@
+Question 1
+Write a function to find the maximum element in the stack.
+
+Solution:
+
+
+Question 2
+Write a function to find the minimum element in the stack.
+
+
+Solution:
