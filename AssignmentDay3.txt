@@ -1,0 +1,61 @@
+Question 1
+Write a function “insert_any()” for inserting a node at any given position of the linked list. Assume
+position starts at 0.
+Solution:
+collection.insert_many([{"test": 22345}])
+
+Question 2
+Write a function “delete_beg()” for deleting a node from the beginning of the linked list.
+
+Solution:
+
+list *delete_beg(list *start) {
+  if (start == NULL) {
+    printf("Empty list!!!");
+    return start;
+  } else {
+    List *current = start;
+    List *ptr = start;
+
+    while (ptr->next != start)
+      ptr = ptr->next;
+
+    if ( ptr->next == ptr ) 
+    {
+        start = NULL;
+    }
+    else 
+    {
+       start = start->next;
+       ptr->next = start;
+    }
+
+    free( current );
+
+    return start;
+  }
+
+Question 3
+Write a function “delete_end()” for deleting a node from the end of the linked list.
+
+Solution:
+
+void delete_end()  
+{  
+    if(header->link == NULL)  
+    {  
+        printf("\nEmpty Linked List. Deletion not possible.\n");  
+    }  
+    else  
+    {  
+        //Traverse to the end of the list.  
+        ptr = header;  
+        while(ptr->link != NULL)  
+        {  
+            ptr1 = ptr;  
+            ptr = ptr->link;  
+        }  
+        ptr1->link = ptr->link;  
+        free(ptr);  
+        printf("\nNode deleted from the end.\n");   }     
+}  
